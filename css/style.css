@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+
+body{
+  font-family: "Trirong", serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+
+
+#allContent {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+}
+
+
+
+.info {
+  margin-top: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#container {
+  position: relative;
+  bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 300px;
+  margin: 20% auto -5% auto;
+}
+
+.navbar-nav, .navbar {
+  background-color: rgb(227,117,203);
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  margin: auto;
+  width: 290px;
+  height: 300px;
+  background-color: rgb(111, 223, 231);
+  position: relative;
+  border: 3px white solid;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+}
+
+.card-title {
+  background-color: rgb(255, 115, 0);
+  margin-top: 0px;
+  font-size: 25px;
+  color: white;
+  position: relative;
+  bottom: 3px;
+  height: 35px;
+}
+
+
+
+#thumbUp, #thumbDown, #appleLogo{
+  height: 140px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.overallScreen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #151815;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.nav-item, .nav-link {
+  margin-left: 40px;
+}
+
+.list-group{
+	width: 400px !important;
+
+}
+
+.list-group-item{
+	margin-top:10px;
+	border-radius: none; 
+	background: #5E35B1;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.list-group-item:hover{
+	transform: scaleX(1.1);
+}
+
+
+
+.check{
+	opacity: 0;
+	transition: all 0.6s ease-in-out;
+}
+
+.list-group-item:hover .check {
+	opacity: 1;
+
+}
+
+.about span{
+	font-size: 12px;
+	margin-right: 10px;
+
+}
+
+input[type=checkbox] {
+         position: relative;
+	       cursor: pointer;
+    }
+    input[type=checkbox]:before {
+         content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: 0;
+    border: 1px solid #10a3f9;
+    border-radius: 3px;
+    background-color: white;
+
+}
+    input[type=checkbox]:checked:after {
+         content: "";
+    display: block;
+    width: 7px;
+    height: 12px;
+    border: solid #007bff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+   }
+
+  input[type="checkbox"]:checked + .check { opacity: 1; }
